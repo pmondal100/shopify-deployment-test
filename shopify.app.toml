@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "e9e1f019e6edcd2dd4cf17a1877d6390"
+name = "deployment-demo-app"
+handle = "deployment-demo-app"
+application_url = "https://indicates-housing-weekend-decrease.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-c4e86bd7.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://indicates-housing-weekend-decrease.trycloudflare.com/auth/callback",
+  "https://indicates-housing-weekend-decrease.trycloudflare.com/auth/shopify/callback",
+  "https://indicates-housing-weekend-decrease.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
