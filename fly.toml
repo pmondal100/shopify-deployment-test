@@ -7,7 +7,7 @@ app = 'shopify-deployment-test'
 primary_region = 'ams'
 
 [env]
-  PORT = "8081"
+  PORT = "8080"
   SHOPIFY_APP_URL = "https://shopify-deployment-test.fly.dev/"
   SHOPIFY_API_KEY = "0abea14d633cc78b0c81fc13be8497aa"
   SCOPES = "write_products"
